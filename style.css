@@ -1,0 +1,483 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+  
+    max-width: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .interface {
+    margin: 1280;
+  }
+  
+  .textName {
+    display: none;
+  }
+  
+  .card:hover .textName {
+    display: block;
+  }
+  
+  .card:hover .botoes {
+    display: flex;
+  }
+  
+  .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #708090;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  h2.titulo {
+    background: linear-gradient(90deg, #ebe6e3, #a6a6a6, #708090);
+    font-size: 45px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0px;
+    height: auto;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Estilo do cabeçalho */
+  header .logo img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  header {
+    padding: 40px 4%;
+  }
+  
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+  }
+  
+  header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+  }
+  
+  .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #708090;
+    transform: scale(1.05);
+  }
+  
+  /* ESTILO DO TOPO DO SITE */
+  
+  section.topo-do-site {
+    padding: 40px 4%;
+  }
+  
+  section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .topo-do-site h1 {
+    background: linear-gradient(90deg, #ebe6e3, #a6a6a6, #708090);
+    padding: 30px 0 30px 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 42px;
+    line-height: 40px;
+  }
+  
+  .topo-do-site h1 span {
+    color: #708090;
+  }
+  
+  .topo-do-site p {
+    color: #fff;
+    padding: 0 0 15px 0;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    padding: 130px;
+    width: 900px;
+    height: 320px;
+    position: relative;
+    background: linear-gradient(90deg, #ebe6e3, #a6a6a6, #708090);
+    box-shadow: 0px 35px 80px rgba(0, rgb(0, 0, 0), rgb(0, 0, 0), 0.15);
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  .card:hover {
+    height: 650px;
+  }
+  
+  .card .image-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0%;
+  }
+  
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .fa-html5 {
+    color: orange;
+  }
+  
+  .fa-js {
+    color: yellow;
+  }
+  
+  .fa-css3-alt {
+    color: #264de4;
+  }
+  
+  .fa-react {
+    color: #61dbfb;
+  }
+  
+  .fa-vuejs {
+    color: #35495e;
+  }
+  
+  .content h1 {
+    color: #000;
+    height: 100%;
+  }
+  .content p {
+    color: #000;
+  }
+  
+  .content .botoes {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    gap: 1rem;
+  }
+  
+  .botoes button {
+    background: none;
+    border: none;
+  }
+  
+  .content .btn-social i {
+    background-color: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 15px;
+   color: #fff;
+  }
+  
+  .content .btn-social2 i {
+    color: #0056b3;
+    background: transparent;
+    font-size: 35px;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  
+  .content .btn-social3 i {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 35px;
+  }
+  
+  .card .content {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    height: 100% !important;
+    padding: 0px 30px;
+    text-align: center;
+    overflow: hidden;
+    height: 30vh;
+    transition: 0, 5s;
+  }
+  
+  .card:hover.content {
+    top: 130px;
+    height: 250px;
+  }
+  
+  /* ESTILO DAS HABILIDADES */
+  
+  section.habilidades {
+    padding: 40px 4%;
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  section.habilidades {
+    gap: 60px;
+  }
+  
+  .habilidades .titulo {
+    margin-bottom: 0px;
+  }
+  
+  .habilidades .habilidades-box {
+    color: #fff;
+    font-size: 30px;
+    margin: 30px;
+    padding: 30px;
+  }
+  
+  .habilidades .habilidades-box i {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+  }
+  
+  /* estilo projetos */
+  
+  section.projetos {
+    padding: 120px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+  }
+  section.projetos .flex {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .interface .titulo {
+    margin-bottom: 60px;
+  }
+  
+  .img-proj {
+    width: 1186px;
+    height: 681px;
+  }
+  
+  .img-proj2 {
+    margin-top: 60px;
+    width: 342px;
+    height: 695px;
+  }
+  
+  .img-proj3 {
+    margin-top: 60px;
+    width: 449px;
+    height: 678px;
+  }
+  
+  /* Estilo form contato */
+  
+  .contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #contactForm {
+    position: relative;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  form textarea {
+    width: 100%;
+    padding: 20px 15px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: block;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 90%;
+    margin-top: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsivo */
+  
+  @media (max-width: 800px) {
+    header {
+      padding: 5px;
+    }
+  
+    .txt-topo-site {
+      font-size: 0.8rem;
+    }
+  
+    section.topo-do-site {
+      padding: 10px 4%;
+    }
+  
+    header .logo img {
+      width: 180px;
+      height: 115px;
+      object-fit: cover;
+    }
+  
+    .img-proj {
+      display: none;
+    }
+  
+    .img-proj3 {
+      display: none;
+    }
+  
+    .header .btn-contato {
+      align-items: center;
+      margin-top: 15px;
+    }
+  
+    .topo-do-site h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 15px 0 15px 0;
+    }
+  
+    .topo-do-site p {
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .topo-do-site .btn-contato {
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .menu-desktop ul {
+      display: flex;
+    }
+  
+    .menu-desktop li {
+      padding: 5px;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 320px !important;
+    }
+  
+    .card:hover {
+      height: 1060px;
+    }
+  
+    .content .textName {
+      color: #000;
+    }
+  
+    .habilidades {
+      margin-top: 30px !important;
+    }
+  
+    .interface {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .menu-desktop {
+      text-align: center;
+      margin-top: 15px;
+      text-align: center;
+    }
+  
+    #contactForm {
+      width: 360px;
+      height: 500px;
+      margin-top: 30px;
+    }
+  
+    .interface .titulo {
+      margin-bottom: 10px;
+    }
+  }
+  
